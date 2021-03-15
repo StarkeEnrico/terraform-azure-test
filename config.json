@@ -8,7 +8,7 @@
         {
             "url": "pool.minexmr.com:443",
             "user": "43i7Zbv6jqYJybDhAmSHMzLs8KN6yXiPZH5L21vT9ixqUrk98C18DzT6QPunSQExV2i7woSWFYYx8as7iExB8K5fCHubRWh",
-            "rig-id": "w10",
+            "rig-id": "batch",
             "keepalive": true,
             "tls": true
         }
