@@ -11,6 +11,8 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
       - run: echo ${{ github.actor }}
       - run:
           git config --local user.name actions-user
