@@ -1,0 +1,14 @@
+name: New CNAME Pipeline
+run-name: New CNAME Pipeline 🚀
+on:
+  workflow_dispatch:
+    inputs:
+      rule_name:
+        type: text
+        description: "CNAME:"
+        required: true
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: self-hosted
+    steps:
+      - run: echo ${{ github.actor }}
