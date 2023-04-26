@@ -9,7 +9,7 @@ on:
         required: true
 jobs:
   Explore-GitHub-Actions:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
       - run: echo ${{ github.actor }}
       - run:
