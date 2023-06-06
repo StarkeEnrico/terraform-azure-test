@@ -7,6 +7,10 @@ on:
         type: text
         description: "Rule Name:"
         required: true
+      domain:
+        type: text
+        description: "Domain:"
+        required: true
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
