@@ -17,7 +17,7 @@ jobs:
       - run:
           git config --global user.name "StarkeEnrico"
           
-          echo 'Add ressource new CNAME [$rule_name]' >> x
+          echo 'Add ressource new CNAME ${{ github.event.inputs.rule_name }}' >> x
 
           git commit -am "Change x" 
  
