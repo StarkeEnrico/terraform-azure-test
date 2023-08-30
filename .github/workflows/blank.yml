@@ -33,3 +33,7 @@ jobs:
       - name: Run a AWS CLI command
         run: |
           aws sqs send-message --queue-url https://sqs.eu-central-1.amazonaws.com/417255711837/swo-bit-dev-terraform-jenkins-sqs.fifo --message-body "DevOps test" --message-group-id "EBS" --message-deduplication-id "437"
+        env:
+            AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+            AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+            AWS_DEFAULT_REGION: 'eu-central-1'
